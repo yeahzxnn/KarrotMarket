@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35D0E5052966B49B00CD6B50 /* MyKarrotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E5042966B49B00CD6B50 /* MyKarrotViewController.swift */; };
+		35D0E5072966B4C600CD6B50 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E5062966B4C600CD6B50 /* ChattingViewController.swift */; };
+		35D0E5092966B4DD00CD6B50 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E5082966B4DD00CD6B50 /* CategoryViewController.swift */; };
+		35D0E50B2966B4F300CD6B50 /* SalesPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E50A2966B4F300CD6B50 /* SalesPostViewController.swift */; };
+		35D0E50D2966B4FA00CD6B50 /* WritingSalesPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E50C2966B4FA00CD6B50 /* WritingSalesPostViewController.swift */; };
+		35D0E50F2966B50800CD6B50 /* VillageLifeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E50E2966B50800CD6B50 /* VillageLifeViewController.swift */; };
+		35D0E5112966B51000CD6B50 /* NearMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E5102966B51000CD6B50 /* NearMeViewController.swift */; };
+		35D0E5142966B55500CD6B50 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E5132966B55500CD6B50 /* TableViewModel.swift */; };
+		35D0E5162966B56000CD6B50 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E5152966B56000CD6B50 /* DataType.swift */; };
+		35D0E5192966B5B900CD6B50 /* SalesPostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D0E5182966B5B900CD6B50 /* SalesPostCollectionViewCell.swift */; };
 		35DF2C5B2964A08100CF74A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DF2C5A2964A08100CF74A2 /* AppDelegate.swift */; };
 		35DF2C5D2964A08100CF74A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DF2C5C2964A08100CF74A2 /* SceneDelegate.swift */; };
 		35DF2C5F2964A08100CF74A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DF2C5E2964A08100CF74A2 /* ViewController.swift */; };
@@ -36,6 +46,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35D0E5042966B49B00CD6B50 /* MyKarrotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKarrotViewController.swift; sourceTree = "<group>"; };
+		35D0E5062966B4C600CD6B50 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		35D0E5082966B4DD00CD6B50 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		35D0E50A2966B4F300CD6B50 /* SalesPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPostViewController.swift; sourceTree = "<group>"; };
+		35D0E50C2966B4FA00CD6B50 /* WritingSalesPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingSalesPostViewController.swift; sourceTree = "<group>"; };
+		35D0E50E2966B50800CD6B50 /* VillageLifeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VillageLifeViewController.swift; sourceTree = "<group>"; };
+		35D0E5102966B51000CD6B50 /* NearMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeViewController.swift; sourceTree = "<group>"; };
+		35D0E5132966B55500CD6B50 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		35D0E5152966B56000CD6B50 /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		35D0E5182966B5B900CD6B50 /* SalesPostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesPostCollectionViewCell.swift; sourceTree = "<group>"; };
 		35DF2C572964A08100CF74A2 /* KarrotMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KarrotMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DF2C5A2964A08100CF74A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35DF2C5C2964A08100CF74A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +96,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35D0E5022966B30800CD6B50 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				35DF2C5A2964A08100CF74A2 /* AppDelegate.swift */,
+				35DF2C5C2964A08100CF74A2 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		35D0E5032966B42E00CD6B50 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				35DF2C5E2964A08100CF74A2 /* ViewController.swift */,
+				35D0E5042966B49B00CD6B50 /* MyKarrotViewController.swift */,
+				35D0E50E2966B50800CD6B50 /* VillageLifeViewController.swift */,
+				35D0E5062966B4C600CD6B50 /* ChattingViewController.swift */,
+				35D0E5102966B51000CD6B50 /* NearMeViewController.swift */,
+				35D0E50A2966B4F300CD6B50 /* SalesPostViewController.swift */,
+				35D0E50C2966B4FA00CD6B50 /* WritingSalesPostViewController.swift */,
+				35D0E5082966B4DD00CD6B50 /* CategoryViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		35D0E5122966B51C00CD6B50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				35D0E5132966B55500CD6B50 /* TableViewModel.swift */,
+				35D0E5152966B56000CD6B50 /* DataType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35D0E5172966B58E00CD6B50 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				35D0E5182966B5B900CD6B50 /* SalesPostCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		35D0E51A2966B5D500CD6B50 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				35D0E5242966B66A00CD6B50 /* Chatting */,
+				35D0E5232966B66200CD6B50 /* MyKarrot */,
+				35D0E5222966B65000CD6B50 /* Village */,
+				35D0E5212966B62700CD6B50 /* Sales */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		35D0E5212966B62700CD6B50 /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sales;
+			sourceTree = "<group>";
+		};
+		35D0E5222966B65000CD6B50 /* Village */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Village;
+			sourceTree = "<group>";
+		};
+		35D0E5232966B66200CD6B50 /* MyKarrot */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyKarrot;
+			sourceTree = "<group>";
+		};
+		35D0E5242966B66A00CD6B50 /* Chatting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Chatting;
+			sourceTree = "<group>";
+		};
+		35D0E5262966B6A100CD6B50 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		35DF2C4E2964A08100CF74A2 = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +206,15 @@
 		35DF2C592964A08100CF74A2 /* KarrotMarket */ = {
 			isa = PBXGroup;
 			children = (
-				35DF2C5A2964A08100CF74A2 /* AppDelegate.swift */,
-				35DF2C5C2964A08100CF74A2 /* SceneDelegate.swift */,
-				35DF2C5E2964A08100CF74A2 /* ViewController.swift */,
+				35D0E5022966B30800CD6B50 /* Delegate */,
+				35D0E5032966B42E00CD6B50 /* ViewController */,
 				35DF2C602964A08100CF74A2 /* Main.storyboard */,
+				35D0E5122966B51C00CD6B50 /* Model */,
+				35D0E5172966B58E00CD6B50 /* CollectionViewCell */,
 				35DF2C632964A08200CF74A2 /* Assets.xcassets */,
+				35D0E51A2966B5D500CD6B50 /* TableViewCell */,
 				35DF2C652964A08200CF74A2 /* LaunchScreen.storyboard */,
+				35D0E5262966B6A100CD6B50 /* Custom */,
 				35DF2C682964A08200CF74A2 /* Info.plist */,
 			);
 			path = KarrotMarket;
@@ -258,9 +368,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35D0E5072966B4C600CD6B50 /* ChattingViewController.swift in Sources */,
+				35D0E50D2966B4FA00CD6B50 /* WritingSalesPostViewController.swift in Sources */,
+				35D0E5092966B4DD00CD6B50 /* CategoryViewController.swift in Sources */,
 				35DF2C5F2964A08100CF74A2 /* ViewController.swift in Sources */,
+				35D0E50B2966B4F300CD6B50 /* SalesPostViewController.swift in Sources */,
 				35DF2C5B2964A08100CF74A2 /* AppDelegate.swift in Sources */,
 				35DF2C5D2964A08100CF74A2 /* SceneDelegate.swift in Sources */,
+				35D0E5162966B56000CD6B50 /* DataType.swift in Sources */,
+				35D0E5112966B51000CD6B50 /* NearMeViewController.swift in Sources */,
+				35D0E50F2966B50800CD6B50 /* VillageLifeViewController.swift in Sources */,
+				35D0E5192966B5B900CD6B50 /* SalesPostCollectionViewCell.swift in Sources */,
+				35D0E5142966B55500CD6B50 /* TableViewModel.swift in Sources */,
+				35D0E5052966B49B00CD6B50 /* MyKarrotViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
