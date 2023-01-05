@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyKarrotViewController: ViewController {
+class MyKarrotViewController: MainViewController {
     
     // 사용중인 유저 닉네임
     var userStringName: String = "해피토스트"

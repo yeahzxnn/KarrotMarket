@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SalesPostViewController: ViewController {
+class SalesPostViewController: MainViewController {
     
     // MARK: - Alert 구현
     @IBAction func didTouchedAlertButton(_ sender: UIButton) {

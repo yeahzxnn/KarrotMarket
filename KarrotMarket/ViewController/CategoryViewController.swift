@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class CategoryViewController: ViewController {
+class CategoryViewController: MainViewController {
     
     // 열거형 값 다 가져오기 (protocol사용)
     let categoryList = ProductCategory.allCases

@@ -1,8 +1,8 @@
 //
-//  SalesPostCollectionViewCell.swift
-//  KarrotMarket
+//  CollectionViewCell.swift
+//  DaangnMarket
 //
-//  Created by 신예진 on 2023/01/05.
+//  Created by 신예진
 //
 
 import Foundation
@@ -30,3 +30,4 @@ class SalesPostCollectionViewCell: UICollectionViewCell {
             return result
     }
 }
+

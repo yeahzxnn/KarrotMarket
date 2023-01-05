@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import MaterialComponents.MaterialButtons
 
-class VillageLifeViewController: ViewController {
+class VillageLifeViewController: MainViewController {
     
     var tableViewModel = VillageLiftPostModel()
     

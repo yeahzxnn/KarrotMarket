@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class NearMeViewController: ViewController {
+class NearMeViewController: MainViewController {
     
     
     // MARK: - 인기검색어 관련

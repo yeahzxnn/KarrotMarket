@@ -8,8 +8,7 @@
 import UIKit
 import MaterialComponents.MaterialButtons
 
-
-class ViewController: ViewController {
+class ViewController: MainViewController {
 
     // 테이블뷰 모델
     var tableViewModel = SalesPostModel()

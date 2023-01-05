@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class WritingSalesPostViewController: ViewController {
+class WritingSalesPostViewController: MainViewController {
     
     // MARK: - Header UI연결
     @IBOutlet weak var headerLabel: UILabel!

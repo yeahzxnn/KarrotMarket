@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ChattingViewController: ViewController {
+class ChattingViewController: MainViewController {
     
     // 채팅 테이블뷰 모델
     var tableViewModel = ChattingModel()
