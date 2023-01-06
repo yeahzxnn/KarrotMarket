@@ -21,7 +21,6 @@ class SalesPostCollectionViewCell: UICollectionViewCell {
         productPrice.text = data.price == 0 ? "나눔🧡" : DecimalWon(value: data.price!)
     }
     
-    
     // MARK: - 숫자 -> 콤마찍어서 문자열 반환
     func DecimalWon(value: Int) -> String{
             let numberFormatter = NumberFormatter()

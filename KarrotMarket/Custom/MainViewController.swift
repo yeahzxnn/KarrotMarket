@@ -18,9 +18,6 @@ class MainViewController: UIViewController {
         img.layer.cornerRadius = size
     }
     
-    
-    
-    
     // MARK: - UI View
     func addBorderToUIView(_ to: UIView, size: CGFloat, color: CGColor) {
         to.layer.borderWidth = size

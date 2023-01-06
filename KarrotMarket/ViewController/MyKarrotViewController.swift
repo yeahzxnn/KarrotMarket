@@ -5,7 +5,6 @@
 //  Created by 신예진 on 2023/01/05.
 //
 
-
 import UIKit
 
 class MyKarrotViewController: MainViewController {
@@ -17,11 +16,14 @@ class MyKarrotViewController: MainViewController {
     // 테이블뷰 연결
     @IBOutlet weak var tableView: UITableView!
     
+    
     // Model연결
     var settingModel = SettingModel()
     
+    
     // 테이블뷰 각 섹션에 cell을 얼마나 넣을건지 알려주는 배열
     let eachSectionCell = [1, 4, 4, 2, 3, 5]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +42,7 @@ class MyKarrotViewController: MainViewController {
 
 
 
-extension MyDaangnViewController: UITableViewDelegate, UITableViewDataSource {
+extension MyKarrotViewController: UITableViewDelegate, UITableViewDataSource {
     
     // 섹션의 수
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -80,6 +82,9 @@ extension MyDaangnViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    
+    
+    
     // 스택오버플로
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         // 섹션 1번부터 적용하는 조건문
@@ -88,11 +93,7 @@ extension MyDaangnViewController: UITableViewDelegate, UITableViewDataSource {
             let v = UIView(frame: CGRect(x: 0, y:0, width: tableView.frame.width, height: 10))
             // 배경색 설정
             v.backgroundColor = .systemGray5
-            // 내부에 Label을 추가하는 코드
-//            let label = UILabel(frame: CGRect(x: 8.0, y: 4.0, width: v.bounds.size.width - 16.0, height: v.bounds.size.height - 8.0))
-//            label.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-//            label.text = "Header for Third Section"
-//            v.addSubview(label)
+
             return v
         }
         // nil을 반환하면 Header가 생기지 않음

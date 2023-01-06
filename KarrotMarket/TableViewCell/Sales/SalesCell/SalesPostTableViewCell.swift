@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SalesPostTableViewCell: TableViewCell {
+class SalesPostTableViewCell: MainTableViewCell {
     
     // MARK: - UI연결
     @IBOutlet weak var cellImage: UIImageView!

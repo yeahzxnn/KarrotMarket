@@ -18,18 +18,18 @@ class UserModel {
     
     init() {
         storage = [
-            "에이든": User(nickName: "에이든", address: "청덕동", mannerScore: 43.7, profileImage: "프로필3.jpeg"),
-            "당근마": User(nickName: "당근마", address: "마북동", mannerScore: 39.1),
-            "비움": User(nickName: "비움", address: "동백동", mannerScore: 36.7, profileImage: "프로필2.jpeg"),
-            "노구트": User(nickName: "노구트", address: "마북동", mannerScore: 41.2, profileImage: "프로필5.jpeg"),
-            "인기제품": User(nickName: "인기제품", address: "중동", mannerScore: 42.0, profileImage: "프로필1.jpeg"),
-            "문도": User(nickName: "문도", address: "정글동", mannerScore: 27.1),
-            "티모": User(nickName: "티모", address: "탑동", mannerScore: 49.1),
-            "리신": User(nickName: "리신", address: "정글동", mannerScore: 65.2),
-            "제이스": User(nickName: "제이스", address: "미드동", mannerScore: 34.4),
-            "소나": User(nickName: "소나", address: "바텀동", mannerScore: 34.4, profileImage: "프로필4.jpeg"),
-            "이즈": User(nickName: "이즈", address: "바텀동", mannerScore: 34.4),
-            "미달드려": User(nickName: "미달드려", address: "중동", mannerScore: 34.4),
+            "해피토스트": User(nickName: "해피토스트", address: "양천구", mannerScore: 30.1, profileImage: "프로필3.jpeg"),
+            "레드": User(nickName: "레드", address: "삼성동", mannerScore: 40.3),
+            "옐로우": User(nickName: "옐로우", address: "매봉동", mannerScore: 33.3, profileImage: "프로필2.jpeg"),
+            "블루": User(nickName: "블루", address: "노량진", mannerScore: 33.2, profileImage: "프로필5.jpeg"),
+            "팝송덕후": User(nickName: "팝송덕후", address: "개봉동", mannerScore: 43.3, profileImage: "프로필1.jpeg"),
+            "안녕": User(nickName: "안녕", address: "노량진", mannerScore: 50.0),
+            "현빈": User(nickName: "현빈", address: "삼성동", mannerScore: 33.3),
+            "문상민": User(nickName: "문상민", address: "양천구", mannerScore: 44.4),
+            "이재욱": User(nickName: "이재욱", address: "삼성동", mannerScore: 33.3),
+            "한소희": User(nickName: "한소희", address: "한남동", mannerScore: 99.9, profileImage: "프로필4.jpeg"),
+            "고윤정": User(nickName: "고윤정", address: "한남동", mannerScore: 99.9),
+            "채형원": User(nickName: "채형원", address: "한남동", mannerScore: 36.6),
         ]
     }
     
@@ -54,8 +54,8 @@ class SalesPostModel {
     
     init() {
         storage = [
-            SalesPost(writer: userModel.returnUserInfo("당근마"), title: "청소기 무료나눔", content: "무나해요 비대면 문고리!", price: 0, imageString: "청소기.jpg", category: .기타중고물품, identifier: 0),
-            SalesPost(writer: userModel.returnUserInfo("에이든"), title: "아이패드 10.5", content: "상태좋아요\n직접보고 구매하세요\n당근페이 거래하면 5처넌 네고 가능해요", price: 300000, imageString: "아이패드.jpg", category: .디지털기기, identifier: 1),
+            SalesPost(writer: userModel.returnUserInfo("한소희"), title: "나이키 덩크로우 네이처 페일코랄 255", content: "크림 구매내역 인증 가능", price: 90000, imageString: "청소기.jpg", category: .기타중고물품, identifier: 0),
+            SalesPost(writer: userModel.returnUserInfo("고윤정"), title: "아이패드 10.5", content: "상태좋아요\n직접보고 구매하세요\n당근페이 거래하면 5처넌 네고 가능해요", price: 300000, imageString: "아이패드.jpg", category: .디지털기기, identifier: 1),
             SalesPost(writer: userModel.returnUserInfo("비움"), title: "바람막이", content: "노스페이스 바람막이\n제작년에 정가 10만원에 구매했어요. 싸게 가져가세요", price: 10000, imageString: "바람막이.jpg", category: .남성의류, identifier: 2),
             SalesPost(writer: userModel.returnUserInfo("노구트"), title: "키보드", content: "청축 기계식 키보드 키감이 매우 훌륭합니다 차각차각한거 좋아하시면 추천 디자인도 감성있어요", price: 50000, imageString: "키보드.jpg", category: .디지털기기, identifier: 3),
             SalesPost(writer: userModel.returnUserInfo("인기제품"), title: "게이밍 의자", content: "사용감있어요. 비대면거래 선호\n거래 후 반품환불 불가능합니다.", price: 30000, imageString: "게이밍의자.jpg", category: .가구인테리어, identifier: 4),

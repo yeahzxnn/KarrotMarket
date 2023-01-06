@@ -55,7 +55,7 @@ class WritingSalesPostViewController: MainViewController {
     @IBAction func didTouchedWriteButton(_ sender: UIButton) {
         
         // 글 작성하는 유저 정보 가져오기
-        guard let userInfoVC = storyboard?.instantiateViewController(withIdentifier: "myDaangnView") as? MyDaangnViewController else {
+        guard let userInfoVC = storyboard?.instantiateViewController(withIdentifier: "myKarrotView") as? MyKarrotViewController else {
             return
         }
         let userNickName: String = userInfoVC.userStringName
@@ -71,26 +71,19 @@ class WritingSalesPostViewController: MainViewController {
             salesPostVC?.updatePost(homeVC!.tableViewModel.returnPostInfo(salesPostVC!.receivedData!.identifier))
         }
 
-        
-        
         // ---홈화면 테이블뷰 업데이트---
         homeVC?.tableView.reloadData()
         
         // ---뷰 전환---
         self.dismiss(animated: true, completion: nil)
     }
-    
-    
-    
-    
-    
+
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // dismiss add target
         dismissButton.addTarget(self, action: #selector(didTouchedDismissButton), for: .touchUpInside)
-        
         
         // HeaderText 설정
         headerLabel.text = headerText!

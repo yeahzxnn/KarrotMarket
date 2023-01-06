@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uGm-5S-g7z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CPl-qr-VD3">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -2853,7 +2853,7 @@
         <!--나의 당근-->
         <scene sceneID="GMi-lR-Key">
             <objects>
-                <viewController storyboardIdentifier="myDaangnView" id="gUW-0Z-e11" customClass="MyDaangnViewController" customModule="KarrotMarket" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myKarrotView" id="gUW-0Z-e11" customClass="MyKarrotViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IOz-l6-9yi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2937,7 +2937,7 @@
                     <tabBarItem key="tabBarItem" title="나의 당근" image="person" catalog="system" selectedImage="person.fill" id="dkO-v3-NFE"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="jKN-Xi-DyR" id="cXr-f4-hZA"/>
+                        <outlet property="tableView" destination="jKN-Xi-DyR" id="L4l-AY-sk5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGd-qv-IBh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3778,6 +3778,7 @@
                         <outlet property="image2" destination="Daw-kg-KHM" id="vjd-db-r9g"/>
                         <outlet property="image3" destination="tfT-eb-hIZ" id="7C2-pv-j2S"/>
                         <outlet property="image4" destination="UlQ-fD-yog" id="OGS-OH-XKC"/>
+                        <outlet property="imageUIView" destination="R7w-8y-51b" id="efm-SE-jP3"/>
                         <outlet property="mannerEnergy" destination="mAK-Ze-Rpd" id="2KS-Xe-dt6"/>
                         <outlet property="mannerFace" destination="gOD-B6-FEt" id="nTU-Gk-mGc"/>
                         <outlet property="mannerScore" destination="Rxk-Pp-TP6" id="2gP-of-GnJ"/>
