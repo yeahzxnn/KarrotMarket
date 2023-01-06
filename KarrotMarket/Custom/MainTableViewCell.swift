@@ -24,11 +24,7 @@ class MainTableViewCell: UITableViewCell {
     func addRadiusToImage(_ image: UIImageView) {
         image.layer.cornerRadius = image.frame.height / 10
     }
-    
-    
-    
-    
-    
+
     // MARK: - UIButton
     
     // 버튼에 Radius 추가

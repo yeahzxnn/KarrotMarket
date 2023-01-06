@@ -12,17 +12,14 @@ class MyKarrotViewController: MainViewController {
     // 사용중인 유저 닉네임
     var userStringName: String = "해피토스트"
     
-    
-    // 테이블뷰 연결
     @IBOutlet weak var tableView: UITableView!
-    
     
     // Model연결
     var settingModel = SettingModel()
     
     
     // 테이블뷰 각 섹션에 cell을 얼마나 넣을건지 알려주는 배열
-    let eachSectionCell = [1, 4, 4, 2, 3, 5]
+    let eachSectionCell = [1, 4, 1, 3, 5]
     
     
     override func viewDidLoad() {
@@ -31,16 +28,13 @@ class MyKarrotViewController: MainViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.estimatedRowHeight = 150
+        tableView.estimatedRowHeight = tableView.frame.width/10
         tableView.rowHeight = UITableView.automaticDimension
         
         tableView.register(UINib(nibName: "UserInfoTableViewCell", bundle: nil), forCellReuseIdentifier: "UserInfoTableViewCell")
         tableView.register(UINib(nibName: "UserSettingTableViewCell", bundle: nil), forCellReuseIdentifier: "UserSettingTableViewCell")
     }
 }
-
-
-
 
 extension MyKarrotViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -49,19 +43,11 @@ extension MyKarrotViewController: UITableViewDelegate, UITableViewDataSource {
         return eachSectionCell.count
     }
     
-    
-    // 섹션 헤더 높이?
-//    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
-//        return 10.0
-//    }
-    
-    
     // 각 섹션별로 셀이 몇개 들어가는지?
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return eachSectionCell[section]
     }
-    
-    
+        
     // 셀을 어떤걸로 할건지ㅣ?
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 매개변수로 들어오는 indexPath에 점연산자를 사용하여 section을 얻을 수 있음
@@ -83,8 +69,6 @@ extension MyKarrotViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     
-    
-    
     // 스택오버플로
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         // 섹션 1번부터 적용하는 조건문
@@ -103,7 +87,7 @@ extension MyKarrotViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         // if it's the 3rd section
         if section > 0 {
-            return 10
+            return 5
         }
         return 0
     }

@@ -52,23 +52,19 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPk-5h-uOQ">
                                         <rect key="frame" x="15.000000000000002" y="15.666666666666673" width="20.666666666666671" height="20.666666666666671"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rzS-dH-M36">
-                                                <rect key="frame" x="0.0" y="2.6666666666666652" width="20.666666666666668" height="15.666666666666671"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
-                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Py-Fr-RIa">
                                                 <rect key="frame" x="0.0" y="0.0" width="20.666666666666668" height="20.666666666666668"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="xmark" catalog="system">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="rzS-dH-M36" secondAttribute="trailing" id="4A9-2V-6Qt"/>
-                                            <constraint firstItem="rzS-dH-M36" firstAttribute="leading" secondItem="VPk-5h-uOQ" secondAttribute="leading" id="7rb-OP-LII"/>
-                                            <constraint firstItem="rzS-dH-M36" firstAttribute="top" secondItem="VPk-5h-uOQ" secondAttribute="top" id="9Iu-Qi-UD1"/>
                                             <constraint firstAttribute="bottom" secondItem="9Py-Fr-RIa" secondAttribute="bottom" id="9g9-mM-rqY"/>
-                                            <constraint firstAttribute="bottom" secondItem="rzS-dH-M36" secondAttribute="bottom" id="bLL-Cf-tIw"/>
                                             <constraint firstAttribute="width" secondItem="VPk-5h-uOQ" secondAttribute="height" multiplier="1:1" id="ese-yZ-Xwg"/>
                                             <constraint firstItem="9Py-Fr-RIa" firstAttribute="leading" secondItem="VPk-5h-uOQ" secondAttribute="leading" id="kRQ-o4-0hR"/>
                                             <constraint firstItem="9Py-Fr-RIa" firstAttribute="top" secondItem="VPk-5h-uOQ" secondAttribute="top" id="nfO-Kn-gbz"/>
@@ -205,8 +201,7 @@
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8y-sO-bq7">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <connections>
                                                             <action selector="didTouchedCategoryButton:" destination="h7N-sl-Wqn" eventType="touchUpInside" id="yOr-2H-6k8"/>
                                                         </connections>
@@ -432,11 +427,14 @@
         <!--Navigation Controller-->
         <scene sceneID="Fpo-ej-EfD">
             <objects>
-                <navigationController id="dfa-Lj-gWw" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="writingNavigationController" id="dfa-Lj-gWw" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9oK-tL-sN6">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QFU-Cz-6Sq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="h7N-sl-Wqn" kind="relationship" relationship="rootViewController" id="wwB-IP-SwG"/>
                     </connections>
@@ -1373,7 +1371,7 @@
                                                     <constraint firstAttribute="width" secondItem="jZE-b5-HwT" secondAttribute="height" multiplier="7:1.5" id="IbP-fH-bpB"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Z-c9-5ld" userLabel="인기검색어 View">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6Z-c9-5ld" userLabel="인기 키워드 View">
                                                 <rect key="frame" x="0.0" y="423.99999999999994" width="414" height="59"/>
                                                 <subviews>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1H-R9-hnQ">
@@ -2727,6 +2725,7 @@
                     <tabBarItem key="tabBarItem" title="내 근처" image="location.circle" catalog="system" selectedImage="location.circle.fill" id="kBu-qW-Pg7"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="popularKeyWordStackView" destination="j5S-c2-Ccu" id="PLO-jQ-ZlK"/>
                         <outlet property="searchBarView" destination="RDr-Xa-4k6" id="niF-uF-jMO"/>
                         <outlet property="searchKeywordStackView" destination="AdZ-jo-KeE" id="Slr-U5-0q8"/>
                     </connections>
@@ -2853,7 +2852,7 @@
         <!--나의 당근-->
         <scene sceneID="GMi-lR-Key">
             <objects>
-                <viewController storyboardIdentifier="myKarrotView" id="gUW-0Z-e11" customClass="MyKarrotViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myKarrotView" id="gUW-0Z-e11" customClass="MyKarrotViewController" customModule="KarrotMarket" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IOz-l6-9yi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2937,7 +2936,7 @@
                     <tabBarItem key="tabBarItem" title="나의 당근" image="person" catalog="system" selectedImage="person.fill" id="dkO-v3-NFE"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="jKN-Xi-DyR" id="L4l-AY-sk5"/>
+                        <outlet property="tableView" destination="jKN-Xi-DyR" id="tmm-6h-Hu3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGd-qv-IBh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2965,25 +2964,16 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIT-8U-Cap">
                                         <rect key="frame" x="15.000000000000002" y="15.666666666666666" width="20.666666666666671" height="20.666666666666671"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aJJ-Lr-xyT">
-                                                <rect key="frame" x="0.0" y="3" width="20.666666666666668" height="15"/>
-                                                <color key="tintColor" systemColor="labelColor"/>
-                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLv-e9-ywe">
                                                 <rect key="frame" x="0.0" y="0.0" width="20.666666666666668" height="20.666666666666668"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="xLv-e9-ywe" secondAttribute="bottom" id="1AQ-9J-aYj"/>
-                                            <constraint firstAttribute="trailing" secondItem="aJJ-Lr-xyT" secondAttribute="trailing" id="3JM-ok-6nj"/>
                                             <constraint firstAttribute="width" secondItem="oIT-8U-Cap" secondAttribute="height" multiplier="1:1" id="B4P-en-1oM"/>
                                             <constraint firstAttribute="trailing" secondItem="xLv-e9-ywe" secondAttribute="trailing" id="Ham-3l-2ca"/>
-                                            <constraint firstItem="aJJ-Lr-xyT" firstAttribute="top" secondItem="oIT-8U-Cap" secondAttribute="top" id="LZK-5Y-Hw5"/>
-                                            <constraint firstItem="aJJ-Lr-xyT" firstAttribute="leading" secondItem="oIT-8U-Cap" secondAttribute="leading" id="ifj-yJ-cQT"/>
-                                            <constraint firstAttribute="bottom" secondItem="aJJ-Lr-xyT" secondAttribute="bottom" id="mbO-2i-fMT"/>
                                             <constraint firstItem="xLv-e9-ywe" firstAttribute="top" secondItem="oIT-8U-Cap" secondAttribute="top" id="nya-ML-cnW"/>
                                             <constraint firstItem="xLv-e9-ywe" firstAttribute="leading" secondItem="oIT-8U-Cap" secondAttribute="leading" id="o2j-XE-eFF"/>
                                         </constraints>
@@ -3059,8 +3049,7 @@
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPV-ka-iey">
                                                         <rect key="frame" x="0.0" y="0.0" width="37.333333333333336" height="41.333333333333336"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <connections>
                                                             <action selector="didTouchedPopButton:" destination="NGd-KZ-N70" eventType="touchUpInside" id="jJw-dC-SdH"/>
                                                         </connections>
@@ -3133,8 +3122,7 @@
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulP-xn-gkT">
                                                         <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="41.333333333333336"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <connections>
                                                             <action selector="didTouchedAlertButton:" destination="NGd-KZ-N70" eventType="touchUpInside" id="X3E-qj-9vI"/>
                                                         </connections>
@@ -3675,8 +3663,7 @@
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1P7-1I-mXB">
                                                 <rect key="frame" x="0.0" y="0.0" width="66.333333333333329" height="82.666666666666671"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <connections>
                                                     <action selector="didTouchedHeartButton:" destination="NGd-KZ-N70" eventType="touchUpInside" id="J9B-ir-fDH"/>
                                                 </connections>
@@ -3800,7 +3787,6 @@
     </scenes>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
-        <image name="arrow.left" catalog="system" width="128" height="95"/>
         <image name="bell" catalog="system" width="125" height="128"/>
         <image name="bubble.right" catalog="system" width="128" height="110"/>
         <image name="bubble.right.fill" catalog="system" width="128" height="112"/>

@@ -13,7 +13,6 @@ class CategoryViewController: MainViewController {
     // 열거형 값 다 가져오기 (protocol사용)
     let categoryList = ProductCategory.allCases
     
-    
     // 테이블뷰 연결
     @IBOutlet weak var categoryTableView: UITableView!
     
@@ -21,8 +20,7 @@ class CategoryViewController: MainViewController {
     // 글 작성 View 가져오기 (눌린 버튼으로 값 입력해주기 위함)
     var writingVC: WritingSalesPostViewController?
     
-    
-    
+
     // MARK: - TableViewCell 선택된거 처리
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -32,9 +30,7 @@ class CategoryViewController: MainViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

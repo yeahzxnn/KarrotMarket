@@ -22,6 +22,8 @@ class WritingSalesPostViewController: MainViewController {
     // salesPostVC -> 글을 수정할 경우 기존 작성되어 있던 글 정보를 불러오기 위한 연결
     var salesPostVC: SalesPostViewController?
     
+    
+    
     // MARK: - UI 연결
     // 뒤로가기 버튼
     @IBOutlet weak var dismissButton: UIButton!
@@ -51,6 +53,9 @@ class WritingSalesPostViewController: MainViewController {
     // 내용
     @IBOutlet weak var contentTextView: UITextView!
     
+    
+    
+    
     // MARK: - 완료 버튼 (글 작성 / Model에 data 추가하기)
     @IBAction func didTouchedWriteButton(_ sender: UIButton) {
         
@@ -70,14 +75,14 @@ class WritingSalesPostViewController: MainViewController {
             homeVC?.tableViewModel.modifyPost(identifier: salesPostVC!.receivedData!.identifier, title: titleTextField.text!, content: contentTextView.text!, category: category!, price: Int(priceTextField.text ?? "") ?? nil)
             salesPostVC?.updatePost(homeVC!.tableViewModel.returnPostInfo(salesPostVC!.receivedData!.identifier))
         }
-
+        
         // ---홈화면 테이블뷰 업데이트---
         homeVC?.tableView.reloadData()
         
         // ---뷰 전환---
         self.dismiss(animated: true, completion: nil)
     }
-
+    
     // MARK: - View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,16 +90,17 @@ class WritingSalesPostViewController: MainViewController {
         // dismiss add target
         dismissButton.addTarget(self, action: #selector(didTouchedDismissButton), for: .touchUpInside)
         
+        
         // HeaderText 설정
-        headerLabel.text = headerText!
+        headerLabel?.text = headerText
         
         // 새로 글 작성하는 경우에만 PlaceHolder 설정
-        if headerLabel.text! == "중고거래 글쓰기" {
+        if headerLabel?.text == "중고거래 글쓰기" {
             // 새로 작성하는 경우
             
             // textView 설정
             contentTextView.textColor = UIColor.lightGray
-            contentTextView.text = "삼성동에 올릴 게시글 내용을 작성해주세요.(판매금지 물품은 게시가 제한될 수 있어요.)"
+            contentTextView.text = "삼성동에 올릴 게시글 내용을 작성해주세요.(가품 및 판매금지품목은 게시가 제한될 수 있어요.)"
             contentTextView.delegate = self
             
             // textField 설정
@@ -131,12 +137,11 @@ extension WritingSalesPostViewController: UITextViewDelegate {
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if textView.text.isEmpty {
-            textView.text = "삼성동에 올릴 게시글 내용을 작성해주세요.(판매금지 물품은 게시가 제한될 수 있어요.)"
+            textView.text = "삼성동에 올릴 게시글 내용을 작성해주세요.(가품 및 판매금지품목은 게시가 제한될 수 있어요.)"
             textView.textColor = UIColor.lightGray
         }
     }
 }
-
 
 extension WritingSalesPostViewController: UITextFieldDelegate {
     

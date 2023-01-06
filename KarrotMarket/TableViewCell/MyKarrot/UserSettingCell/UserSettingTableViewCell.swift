@@ -21,10 +21,6 @@ class UserSettingTableViewCell: UITableViewCell {
         settingCellLabel.text = data.text
     }
     
-    
-    
-    
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

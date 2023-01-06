@@ -57,11 +57,6 @@ class VillageLifeTableViewCell: MainTableViewCell {
     }
 }
 
-
-
-
-
-
 // bold속성, color속성 주려고 가져온 extention
 extension UILabel {
     func bold(targetString: String) {

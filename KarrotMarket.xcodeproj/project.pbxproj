@@ -346,7 +346,6 @@
 				4E32C093CD86033733D64B59 /* Pods-KarrotMarket.debug.xcconfig */,
 				4CE3F3F93F67991CE2E39A30 /* Pods-KarrotMarket.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

@@ -190,7 +190,7 @@ class SalesPostViewController: MainViewController {
     // MARK: - UI 업데이트 함수
     func updatePost(_ data: SalesPost) {
         // 상품 이미지
-        if data.imageString == "기본이미지.jpeg" {
+        if data.imageString == "보스헤드셋.jpg" {
             imageUIView.isHidden = true
         }else {
             productImage.image = UIImage(named: data.imageString)

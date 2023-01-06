@@ -20,7 +20,7 @@ class NearMeViewController: MainViewController {
     
     // 인기검색어 버튼들 설정 (테두리 추가, Radius추가)
     func addBorderAndRadius(_ stackView: UIStackView) {
-        for index in 1..<stackView.subviews.count {
+        for index in 0..<stackView.subviews.count {
             guard let eachButton = stackView.subviews[index].subviews[0] as? UIButton else {
                 return
             }
@@ -28,6 +28,10 @@ class NearMeViewController: MainViewController {
             addRadiusToUIButton(eachButton, size: 18)
         }
     }
+    
+    //인기검색어
+    
+    @IBOutlet weak var popularKeyWordStackView: UIStackView!
     
     // MARK: - UI 연결
     @IBOutlet weak var searchBarView: UIView!
@@ -37,7 +41,8 @@ class NearMeViewController: MainViewController {
         
         // 인기검색어 리스트 버튼들 설정
         addBorderAndRadius(searchKeywordStackView)
-        
+
+        addBorderAndRadius(popularKeyWordStackView)
         // 검색창 Radius설정
         addRadiusToUIView(searchBarView, size: 10)
     }
